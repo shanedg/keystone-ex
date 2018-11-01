@@ -9,7 +9,8 @@ Event.add({
   cost: { type: Number, default: 0, size: 'small' },
   startTime: { type: Types.Datetime, required: true, initial: true, index: true },
   endTime: { type: Types.Datetime, required: true, initial: true, index: true },
-  location: { type: Types.Location, initial: true },
+  location: { type: Types.Location, required: false, initial: true },
+
   published: { type: Boolean },
   publishDate: { type: Types.Date, index: true },
 });
